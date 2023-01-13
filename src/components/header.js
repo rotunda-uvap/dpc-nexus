@@ -8,9 +8,10 @@ function Header({ siteTitle }) {
   return (
     <nav className="flex flex-wrap items-center justify-between p-6 mb-6 bg-gray-800">
       <div className="flex items-center flex-shrink-0 mr-6 text-white">
-        <span className="text-xl font-semibold tracking-tight">
+      <Link to={`/`}> <span className=" text-white text-xl font-semibold tracking-tight">
           {siteTitle}
-        </span>
+        </span></Link>
+       
       </div>
       <div className="block lg:hidden">
         <button
@@ -33,13 +34,13 @@ function Header({ siteTitle }) {
         } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
       >
         <div className="text-sm lg:flex-grow">
-          <Link
+          {/* <Link
             to={`/`}
             href="#responsive-header"
             className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
           >
             Home
-          </Link>
+          </Link> */}
           <Link
             to={`/about`}
             className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"

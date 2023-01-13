@@ -7,10 +7,12 @@ import SEO from "../components/seo"
 
 const SecondPage = (props: PageProps) => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="About the DPC" />
     <h1>About the Digital Publishing Collaborative</h1>
-    <p>Content coming ({props.path})</p>
-    <Link to="/">Go back to the homepage</Link>
+    <section className="pb-4"> <p className="py-2">Content coming.</p></section>
+   
+    {/* <p className="p-2">Content coming ({props.path})</p> */}
+ 
   </Layout>
 )
 
