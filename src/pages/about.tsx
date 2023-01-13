@@ -8,8 +8,8 @@ import SEO from "../components/seo"
 const SecondPage = (props: PageProps) => (
   <Layout>
     <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2 ({props.path})</p>
+    <h1>About the Digital Publishing Collaborative</h1>
+    <p>Content coming ({props.path})</p>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
