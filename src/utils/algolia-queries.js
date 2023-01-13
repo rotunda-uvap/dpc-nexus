@@ -13,6 +13,7 @@ const docQuery = `{
         headnote
         id
         nid
+        pub
         baseURL
         source
         title
@@ -24,12 +25,13 @@ const docQuery = `{
       
 }`
 
-function docToAlgoliaRecord({ node: { id, title, author, body, date, headnote, nid, baseURL, source, recipient, collection } }) {
+function docToAlgoliaRecord({ node: { id, title, author, pub, body, date, headnote, nid, baseURL, source, recipient, collection } }) {
   return {
     objectID: id,
     title, 
     author,
     body, 
+    pub,
     date,
     headnote,
     nid,

@@ -40,7 +40,7 @@ module.exports = {
           url: "https://thurmanpapersproject.org/gatsby/docs?_format=json",
           rootKey: 'thurmanDocs',
           // not taking data from thurman unless unrestricted
-         // auth: { username: process.env.THURMAN_BASIC_AUTH_USERNAME, password: process.env.THURMAN_BASIC_AUTH_PASSWORD },
+          auth: { username: process.env.THURMAN_BASIC_AUTH_USERNAME, password: process.env.THURMAN_BASIC_AUTH_PASSWORD },
           schemas:  {
               thurmanDocs: `
                   title: String
@@ -56,13 +56,15 @@ module.exports = {
               `
           }
       }
-  },`gatsby-transformer-json`,
+  },
+  // optional: add json files directly
+ /*  `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./src/data/`,
       },
-    },
+    }, */
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -60,6 +60,7 @@ function createSearchableItemNode(node) {
       case 'bondDocs':
         return {
             body: node.body,
+            pub: "bond",
             title: node.title,
             id: node.id,
             nid: node.nid,
@@ -76,6 +77,7 @@ function createSearchableItemNode(node) {
       case 'thurmanDocs':
         return {
             body: node.body,
+            pub: "thurman",
             title: node.title,
             id: node.id,
             nid: node.nid,

@@ -10,6 +10,7 @@ type SearchableItem implements Node @dontInfer {
   nid: String
   date: String
   title: String
+  pub: String
   baseURL: String
   body: String
   author: String

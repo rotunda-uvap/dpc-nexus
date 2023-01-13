@@ -13,7 +13,7 @@ export default function Search({ indices }) {
   const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
 const searchClient = algoliasearch(appId, searchKey);
-  const Hit = ( {hit}) => <div><a href={hit.baseURL}><h6>{hit.title}</h6></a></div>
+  const Hit = ( {hit}) => <div><a href={`/documents/${hit.pub}/${hit.nid}`}><h6>{hit.title}</h6></a></div>
 
   
   useClickOutside(rootRef, () => setFocus(false))

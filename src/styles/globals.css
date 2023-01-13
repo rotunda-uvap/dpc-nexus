@@ -13,5 +13,7 @@ a {
   @apply text-blue-600;
 }
 
+p {margin-top:1em;}
+p.indent {margin-left:1em;}
 @tailwind components;
 @tailwind utilities;
