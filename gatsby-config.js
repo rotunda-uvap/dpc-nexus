@@ -8,9 +8,7 @@ module.exports = {
     description: `Proof of concept for a multi-site search for the UVA Digital Publishing Collaborative`,
     author: `@pls4e`,
   },
-  flags: {
-    THE_FLAG: false
-  },
+  flags: { PARALLEL_SOURCING: true, FAST_DEV: true , DEV_SSR: false},
   plugins: [
     {
       resolve: "gatsby-source-custom-api",
