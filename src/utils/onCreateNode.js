@@ -61,6 +61,8 @@ function createSearchableItemNode(node) {
         return {
             body: node.body,
             pub: "bond",
+            hero: "bond-hero.jpg",
+            avatar: "bond-avatar.jpg",
             title: node.title,
             id: node.id,
             nid: node.nid,
@@ -78,6 +80,8 @@ function createSearchableItemNode(node) {
         return {
             body: node.body,
             pub: "thurman",
+            hero: "thurman-hero.jpg",
+            avatar: "thurman-avatar.jpg",
             title: node.title,
             id: node.id,
             nid: node.nid,

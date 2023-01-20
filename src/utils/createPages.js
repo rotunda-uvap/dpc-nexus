@@ -10,6 +10,8 @@ exports.createPages = ({ graphql, actions }) => {
                   id
                   nid
                   pub
+                  hero
+                  avatar
                 }
             }
           }
@@ -30,7 +32,9 @@ exports.createPages = ({ graphql, actions }) => {
             component: path.resolve(`./src/templates/document-page.js`),
             context: {
               id: node.id,
-              did: node.nid
+              did: node.nid,
+              heroimg: node.hero,
+              avatarimg: node.avatar
             },
           })
         })

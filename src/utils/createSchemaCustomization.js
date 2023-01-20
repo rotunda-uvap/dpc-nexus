@@ -11,6 +11,8 @@ type SearchableItem implements Node @dontInfer {
   date: String
   title: String
   pub: String
+  hero: String
+  avatar: String
   baseURL: String
   body: String
   author: String
