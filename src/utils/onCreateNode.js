@@ -93,6 +93,8 @@ function createSearchableItemNode(node) {
             source: node.source,
             collection: node.collection
         };
+        
+       
   
       default:
         return null;
